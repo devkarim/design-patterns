@@ -1,20 +1,32 @@
-import memento.Editor;
-import memento.History;
+import state.BrushTool;
+import state.Canvas;
+import state.EraserTool;
 
 public class Main {
     public static void main(String[] args) {
-        var editor = new Editor();
-        var history = new History();
+        // State Pattern
+        Canvas canvas = new Canvas();
 
-        editor.setContent("a");
-        history.push(editor.createState());
+        canvas.setCurrentTool(new EraserTool());
+        canvas.mouseDown();
+        canvas.mouseUp();
 
-        editor.setContent("b");
-        history.push(editor.createState());
-
-        editor.setContent("c");
-        editor.restore(history.pop());
-
-        System.out.println(editor.getContent());
+        canvas.setCurrentTool(new BrushTool());
+        canvas.mouseDown();
+        canvas.mouseUp();
+        // Memento Pattern
+//        var editor = new Editor();
+//        var history = new History();
+//
+//        editor.setContent("a");
+//        history.push(editor.createState());
+//
+//        editor.setContent("b");
+//        history.push(editor.createState());
+//
+//        editor.setContent("c");
+//        editor.restore(history.pop());
+//
+//        System.out.println(editor.getContent());
     }
 }
