@@ -1,4 +1,4 @@
-package iterator;
+package iterator.exercise2;
 
 public interface Iterator<T> {
     boolean hasNext();

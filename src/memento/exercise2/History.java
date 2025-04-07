@@ -1,4 +1,4 @@
-package memento;
+package memento.exercise2;
 
 import java.util.ArrayList;
 import java.util.List;

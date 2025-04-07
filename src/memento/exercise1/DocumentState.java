@@ -1,4 +1,4 @@
-package memento;
+package memento.exercise1;
 
 public class DocumentState {
     private final String content;

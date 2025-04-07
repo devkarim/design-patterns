@@ -1,4 +1,4 @@
-package memento;
+package memento.exercise1;
 
 public class Document {
     private String content;

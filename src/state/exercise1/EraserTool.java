@@ -1,4 +1,4 @@
-package state;
+package state.exercise1;
 
 public class EraserTool implements Tool {
     @Override

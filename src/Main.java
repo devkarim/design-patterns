@@ -1,5 +1,5 @@
-import iterator.BrowseHistory;
-import iterator.Iterator;
+import iterator.exercise1.BrowseHistory;
+import iterator.exercise1.Iterator;
 
 public class Main {
     public static void main(String[] args) {
